@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Books | Sushmita Jafar</title>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/con-pop.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== Header / Navbar ===== -->
+<header class="header">
+  <a href="index.html" class="logo"><span>Sushmita Jafar</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="book.html" class="active">Books</a></li>
+    <li><a href="#" class="nav-contact">Contact</a></li>
+  </ul>
+  <i class="fa-solid fa-bars" id="menu-icon"></i>
+  <button class="visit-btn">Visit Github</button>
+</header>
+
+<!-- ===== Books Section ===== -->
+<section id="books" class="projects">
+  <h2 class="section-title">Books</h2>
+
+  <div class="projects-grid">
+    <!-- === Book 1 === -->
+    <div class="project-card" data-book="1" data-title="Book One" data-subtitle="Adventure & Mystery" data-description="An epic journey unfolds as secrets are revealed and destinies intertwine." data-image="img/img3.webp">
+      <img src="img/img3.webp" alt="Book One" loading="lazy">
+      <h3>Book One</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, officia.</p>
+      <div class="btn-group">
+        <div class="btn view-details">View Details</div>
+        <div class="btn">Order Now</div>
+      </div>
+    </div>
+
+    <!-- === Book 2 === -->
+    <div class="project-card" data-book="2" data-title="Book Two" data-subtitle="Historical Fiction" data-description="A captivating tale set in the golden era, blending history with heart." data-image="img/img4.webp">
+      <img src="img/img4.webp" alt="Book Two" loading="lazy">
+      <h3>Book Two</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, officia.</p>
+      <div class="btn-group">
+        <div class="btn view-details">View Details</div>
+        <div class="btn">Order Now</div>
+      </div>
+    </div>
+
+    <!-- === Book 3 === -->
+    <div class="project-card" data-book="3" data-title="Book Three" data-subtitle="Sci-Fi Thriller" data-description="A mind-bending saga of technology, humanity, and the unknown." data-image="img/img5.webp">
+      <img src="img/img5.webp" alt="Book Three" loading="lazy">
+      <h3>Book Three</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, officia.</p>
+      <div class="btn-group">
+        <div class="btn view-details">View Details</div>
+        <div class="btn">Order Now</div>
+      </div>
+    </div>
+
+    <!-- === Book 4 === -->
+    <div class="project-card" data-book="4" data-title="Book Four" data-subtitle="Romantic Novel" data-description="A timeless love story with unexpected twists." data-image="img/img6.webp">
+      <img src="img/img6.webp" alt="Book Four" loading="lazy">
+      <h3>Book Four</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, officia.</p>
+      <div class="btn-group">
+        <div class="btn view-details">View Details</div>
+        <div class="btn">Order Now</div>
+      </div>
+    </div>
+
+    <!-- === Book 5 === -->
+    <div class="project-card" data-book="5" data-title="Book Five" data-subtitle="Inspirational" data-description="A journey of growth, courage, and finding purpose." data-image="img/img7.webp">
+      <img src="img/img7.webp" alt="Book Five" loading="lazy">
+      <h3>Book Five</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, officia.</p>
+      <div class="btn-group">
+        <div class="btn view-details">View Details</div>
+        <div class="btn">Order Now</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Book Popup ===== -->
+<div class="popup-overlay" id="book-popup">
+  <div class="popup-card side-popup">
+    <button class="close-popup">&times;</button>
+
+    <div class="popup-inner">
+      <!-- Left: Book Image -->
+      <div class="popup-left">
+        <img src="" alt="Book Image" class="popup-img-side">
+      </div>
+
+      <!-- Right: Book Info -->
+      <div class="popup-right">
+        <h3 class="popup-title">Book Title</h3>
+        <p class="popup-subtitle">Subtitle or short info</p>
+        <p class="popup-description">
+          Book description goes here. It can include the author, a short summary or any important details.
+        </p>
+        <div class="popup-btn-group">
+          <a href="order.html" class="btn">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===== Contact Section ===== -->
+<section class="contact" id="contact">
+    <div class="input-box">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="input">
+            <input type="text" placeholder="example@email.com">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="btn">Submit</div>
+    </div>
+</section>
+<!-- ===== Contact Popup Overlay ===== -->
+<div class="contact-overlay" id="contactPopup">
+  <div class="contact-popup">
+    <span class="close-contact" id="closeContact">&times;</span>
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <div class="input-group">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" placeholder="Your Name" required>
+      </div>
+      <div class="input-group">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" placeholder="Your Email" required>
+      </div>
+      <div class="input-group">
+        <i class="fa-solid fa-message"></i>
+        <textarea placeholder="Your Message..." required></textarea>
+      </div>
+      <button type="submit" class="contact-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+<!-- ===== Footer ===== -->
+<footer>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <p class="copyright">&copy;2025 All Rights Reserved | R. Mohammad Shahedur</p>
+</footer>
+
+<script src="js/script.js" defer></script>
+<script src="js/books-popup.js" defer></script>
+<script src="js/contact-popup.js" defer></script>
+
+</body>
+</html>
