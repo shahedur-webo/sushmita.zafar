@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== IMPROVED META TAGS ===== -->
     <title>Sushmita Zafar - Doctor, Writer, Activist</title>
+    <meta name="description" content="Dr. Sushmita Zafar - Medical professional, acclaimed author, and activist. Explore her collection of novels, story collections, and e-books.">
+    <meta name="keywords" content="Sushmita Zafar, author, doctor, writer, Bengali books, novels, story collection, Bangladesh author">
+    <meta name="author" content="Sushmita Zafar">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sushmita Zafar - Doctor, Writer, Activist">
+    <meta property="og:description" content="Medical professional, acclaimed author, and activist. Explore her collection of novels and stories.">
+    <meta property="og:image" content="https://yourdomain.com/img/img1.webp">
+    <meta property="og:url" content="https://yourdomain.com">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sushmita Zafar - Doctor, Writer, Activist">
+    <meta name="twitter:description" content="Medical professional, acclaimed author, and activist.">
+    <meta name="twitter:image" content="https://yourdomain.com/img/img1.webp">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+    
+    <!-- ===== EXTERNAL LINKS ===== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        /* === IMPROVED CSS === */
+        /* === MINIFIED & OPTIMIZED CSS === */
+        :root {
+            --primary-gradient: linear-gradient(to right, #009dff, #ff00ff);
+            --secondary-gradient: linear-gradient(to right, #ff00ff, #009dff);
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --bg-light: #f8f9fa;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -17,20 +52,12 @@
             list-style: none;
         }
 
-        :root {
-            --primary-gradient: linear-gradient(to right, #009dff, #ff00ff);
-            --secondary-gradient: linear-gradient(to right, #ff00ff, #009dff);
-            --text-dark: #1a1a1a;
-            --text-light: #666;
-            --bg-light: #f8f9fa;
-        }
-
         body {
             overflow-x: hidden;
             line-height: 1.6;
         }
 
-        /* === IMPROVED HEADER === */
+        /* === HEADER === */
         .header {
             position: fixed;
             top: 1rem;
@@ -48,6 +75,7 @@
             z-index: 1000;
             width: 90%;
             max-width: 1200px;
+            transition: all 0.3s ease;
         }
 
         .logo {
@@ -57,9 +85,7 @@
             transition: 0.3s ease-in-out;
         }
 
-        .logo:hover {
-            transform: scale(1.05);
-        }
+        .logo:hover { transform: scale(1.05); }
 
         .nav-links {
             display: flex;
@@ -86,9 +112,7 @@
             background: var(--primary-gradient);
         }
 
-        .nav-links li a:hover::before {
-            width: 100%;
-        }
+        .nav-links li a:hover::before { width: 100%; }
 
         .visit-btn {
             padding: 0.8rem 1.5rem;
@@ -107,17 +131,13 @@
             transform: scale(1.05);
         }
 
-        .visit-btn a {
-            color: white;
-        }
-
         #menu-icon {
             font-size: 1.5rem;
             display: none;
             cursor: pointer;
         }
 
-        /* === IMPROVED SECTIONS === */
+        /* === SECTIONS === */
         section {
             padding: 6rem 5%;
             width: 100%;
@@ -134,7 +154,7 @@
             color: transparent;
         }
 
-        /* === IMPROVED HOME SECTION === */
+        /* === HOME SECTION === */
         .about {
             background: var(--bg-light);
             display: flex;
@@ -169,12 +189,6 @@
             text-align: left;
             gap: 1.5rem;
             max-width: 500px;
-        }
-
-        .info-box h3 {
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: var(--text-light);
         }
 
         .info-box h1 {
@@ -241,10 +255,8 @@
             color: transparent;
         }
 
-        /* === IMPROVED ABOUT SECTION === */
-        .experience {
-            background: white;
-        }
+        /* === ABOUT SECTION === */
+        .experience { background: white; }
 
         .experience-info {
             display: flex;
@@ -288,34 +300,13 @@
             color: transparent;
         }
 
-        .grid-card span {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--text-dark);
-        }
-
-        .grid-card h3 {
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: var(--text-light);
-            margin-bottom: 1rem;
-        }
-
-        .grid-card p {
-            font-size: 1rem;
-            line-height: 1.7;
-            color: var(--text-light);
-        }
-
-        /* === IMPROVED BOOKS SECTION === */
-        .projects {
-            background: var(--bg-light);
-        }
+        /* === BOOKS SECTION - FIXED IMAGE DISPLAY === */
+        .projects { background: var(--bg-light); }
 
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            gap: 2.5rem;
             max-width: 1200px;
             margin: 0 auto 3rem;
         }
@@ -323,7 +314,7 @@
         .project-card {
             background: white;
             border-radius: 1.5rem;
-            padding: 2rem;
+            padding: 1.5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -331,6 +322,7 @@
             transition: 0.3s ease-in-out;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             border: 1px solid #f0f0f0;
+            height: 100%;
         }
 
         .project-card:hover {
@@ -340,10 +332,15 @@
 
         .project-card img {
             width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 1rem;
+            max-width: 220px;
+            height: auto;
+            max-height: 320px;
+            object-fit: contain;
             margin-bottom: 1.5rem;
+            border-radius: 0.5rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .project-card h3 {
@@ -351,13 +348,10 @@
             font-weight: 600;
             margin-bottom: 0.5rem;
             color: var(--text-dark);
-        }
-
-        .project-card p {
-            font-size: 1rem;
-            color: var(--text-light);
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
+            min-height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .book-info {
@@ -366,28 +360,37 @@
             gap: 0.5rem;
             margin-bottom: 1.5rem;
             width: 100%;
-        }
-
-        .book-publisher {
-            font-size: 0.9rem;
-            color: var(--text-light);
-            font-style: italic;
+            min-height: 5rem;
         }
 
         .book-type {
             display: inline-block;
             background: var(--primary-gradient);
             color: white;
-            padding: 0.3rem 1rem;
+            padding: 0.4rem 1.2rem;
             border-radius: 2rem;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .book-publisher {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
         }
 
         /* === E-BOOKS SECTION === */
-        .e-books {
-            background: white;
-        }
+        .e-books { background: white; }
 
         .e-books-grid {
             display: grid;
@@ -424,30 +427,10 @@
             color: transparent;
         }
 
-        .e-book-card h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: var(--text-dark);
-        }
+        /* === PUBLISHING INFO SECTION === */
+        .publishing-info { background: var(--bg-light); }
 
-        .e-book-card p {
-            font-size: 1rem;
-            color: var(--text-light);
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }
-
-        /* === NEW PUBLISHING INFO SECTION === */
-        .publishing-info {
-            background: var(--bg-light);
-            padding: 6rem 5%;
-        }
-
-        .publishing-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        .publishing-container { max-width: 1200px; margin: 0 auto; }
 
         .publishing-grid {
             display: grid;
@@ -500,15 +483,10 @@
             transition: 0.3s ease-in-out;
         }
 
-        .publishing-card li:hover a {
-            color: white;
-        }
+        .publishing-card li:hover a { color: white; }
 
-        /* === NEW TESTIMONIALS SECTION === */
-        .testimonials {
-            background: white;
-            padding: 6rem 5%;
-        }
+        /* === TESTIMONIALS SECTION === */
+        .testimonials { background: white; }
 
         .testimonials-grid {
             display: grid;
@@ -540,16 +518,8 @@
             font-size: 1.1rem;
         }
 
-        .testimonial-author {
-            font-weight: 600;
-            color: var(--text-dark);
-            font-size: 1rem;
-        }
-
-        /* === IMPROVED CONTACT SECTION === */
-        .contact {
-            background: var(--bg-light);
-        }
+        /* === CONTACT SECTION === */
+        .contact { background: var(--bg-light); }
 
         .input-box {
             display: flex;
@@ -591,7 +561,7 @@
             color: var(--text-light);
         }
 
-        /* === IMPROVED FOOTER === */
+        /* === FOOTER === */
         footer {
             background: var(--text-dark);
             color: white;
@@ -625,61 +595,68 @@
             color: #ccc;
         }
 
-        /* === ENHANCED RESPONSIVE DESIGN === */
+        /* === LOADING STATE === */
+        .btn-loading {
+            position: relative;
+            color: transparent !important;
+        }
+
+        .btn-loading::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 2px solid white;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* === SUCCESS MESSAGE === */
+        .success-message {
+            display: none;
+            color: #10b981;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+
+        .success-message.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* === RESPONSIVE DESIGN === */
         @media (max-width: 1200px) {
-            .about-container,
-            .experience-info {
-                gap: 3rem;
-            }
-            
-            .about-container img {
-                width: 320px;
-                height: 320px;
-            }
+            .about-container, .experience-info { gap: 3rem; }
+            .about-container img { width: 320px; height: 320px; }
+            .project-card img { max-width: 200px; max-height: 300px; }
         }
 
         @media (max-width: 1024px) {
-            .about-container {
-                gap: 3rem;
-            }
-            
-            .about-container img {
-                width: 300px;
-                height: 300px;
-            }
-            
-            .experience-info {
-                gap: 3rem;
-            }
+            .about-container img { width: 300px; height: 300px; }
+            .experience-info { gap: 3rem; }
+            .project-card img { max-width: 180px; max-height: 280px; }
         }
 
         @media (max-width: 900px) {
-            .about-container img {
-                width: 280px;
-                height: 280px;
-            }
-            
-            .experience-info {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .experience img {
-                width: 100%;
-                max-width: 500px;
-            }
+            .about-container img { width: 280px; height: 280px; }
+            .experience-info { flex-direction: column; text-align: center; }
+            .experience img { width: 100%; max-width: 500px; }
+            .project-card img { max-width: 160px; max-height: 260px; }
         }
 
         @media (max-width: 768px) {
-            .header {
-                padding: 0.8rem 1.5rem;
-                gap: 1rem;
-            }
-
-            #menu-icon {
-                display: block;
-            }
-
+            .header { padding: 0.8rem 1.5rem; gap: 1rem; }
+            #menu-icon { display: block; }
             .nav-links {
                 position: absolute;
                 top: 100%;
@@ -692,119 +669,44 @@
                 gap: 0;
                 display: none;
             }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-links li {
-                width: 100%;
-                text-align: center;
-                padding: 0.8rem 0;
-            }
-
-            .visit-btn {
-                display: none;
-            }
-
-            .about-container {
-                flex-direction: column;
-                text-align: center;
-                gap: 2rem;
-            }
-
-            .about-container img {
-                width: 250px;
-                height: 250px;
-            }
-
-            .info-box {
-                text-align: center;
-                align-items: center;
-            }
-
-            .experience-info {
-                flex-direction: column;
-            }
-
-            .experience img {
-                width: 100%;
-                max-width: 400px;
-            }
-
-            .section-title {
-                font-size: 2.5rem;
-            }
-
-            .info-box h1 {
-                font-size: 2.5rem;
-            }
+            .nav-links.active { display: flex; }
+            .nav-links li { width: 100%; text-align: center; padding: 0.8rem 0; }
+            .visit-btn { display: none; }
+            .about-container { flex-direction: column; text-align: center; gap: 2rem; }
+            .about-container img { width: 250px; height: 250px; }
+            .info-box { text-align: center; align-items: center; }
+            .section-title { font-size: 2.5rem; }
+            .info-box h1 { font-size: 2.5rem; }
+            .projects-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+            .project-card img { max-width: 200px; max-height: 280px; }
         }
 
         @media (max-width: 600px) {
-            .header {
-                padding: 0.8rem 1rem;
-                gap: 0.5rem;
-            }
-            
-            .logo {
-                font-size: 1.1rem;
-            }
+            .header { padding: 0.8rem 1rem; gap: 0.5rem; }
+            .logo { font-size: 1.1rem; }
+            .projects-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto 3rem; }
+            .project-card img { max-width: 220px; max-height: 300px; }
         }
 
         @media (max-width: 480px) {
-            section {
-                padding: 4rem 5%;
-            }
-
-            .about-container img {
-                width: 220px;
-                height: 220px;
-            }
-
-            .info-box h1 {
-                font-size: 2rem;
-            }
-
-            .info-box span {
-                font-size: 1.2rem;
-            }
-
-            .btn-group {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .btn {
-                width: 100%;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-            
-            .socials {
-                gap: 1rem;
-            }
-            
-            .socials i {
-                font-size: 1.5rem;
-            }
+            section { padding: 4rem 5%; }
+            .about-container img { width: 220px; height: 220px; }
+            .info-box h1 { font-size: 2rem; }
+            .info-box span { font-size: 1.2rem; }
+            .btn-group { flex-direction: column; width: 100%; }
+            .btn { width: 100%; }
+            .section-title { font-size: 2rem; }
+            .socials { gap: 1rem; }
+            .socials i { font-size: 1.5rem; }
+            .project-card { padding: 1.2rem; }
+            .project-card img { max-width: 200px; max-height: 280px; }
         }
 
         @media (max-width: 360px) {
-            .about-container img {
-                width: 200px;
-                height: 200px;
-            }
-            
-            .info-box h1 {
-                font-size: 1.8rem;
-            }
-            
-            .section-title {
-                font-size: 1.8rem;
-            }
+            .about-container img { width: 200px; height: 200px; }
+            .info-box h1 { font-size: 1.8rem; }
+            .section-title { font-size: 1.8rem; }
+            .project-card img { max-width: 180px; max-height: 250px; }
         }
     </style>
 </head>
@@ -825,14 +727,14 @@
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
         <button class="visit-btn">
-            <a href="https://www.facebook.com/sushmita.zafar" target="_blank">Visit</a>
+            <a href="https://www.facebook.com/sushmita.zafar" target="_blank" rel="noopener noreferrer">Visit</a>
         </button>
     </header>
 
     <!-- ===== Home Section ===== -->
     <section id="home" class="about">
         <div class="about-container">
-            <img src="img/img1.webp" alt="Sushmita Zafar - Doctor, Writer, Activist">
+            <img src="img/img1.webp" alt="Dr. Sushmita Zafar - Medical doctor, author, and activist" loading="lazy">
 
             <div class="info-box">
                 <div class="text">
@@ -850,10 +752,19 @@
                 </div>
 
                 <div class="socials">
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <!-- FIXED: Added actual social media links -->
+                    <a href="https://facebook.com/sushmita.zafar" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sushmita-zafar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com/sushmita.zafar" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/sushmitazafar" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -883,7 +794,7 @@
                     </p>
                 </div>
             </div>
-            <img src="img/img2.jpg" alt="Sushmita Zafar at work">
+            <img src="img/img2.jpg" alt="Sushmita Zafar working as a doctor and writer" loading="lazy">
         </div>
     </section>
 
@@ -894,7 +805,7 @@
         <div class="projects-grid">
             <!-- Original Books -->
             <div class="project-card">
-                <img src="img/img3.webp" alt="প্রেয়সী - Preyoshi" loading="lazy">
+                <img src="img/প্রেয়সী.jpg" alt="প্রেয়সী - Preyoshi book cover" loading="lazy">
                 <h3>প্রেয়সী (Preyoshi)</h3>
                 <div class="book-info">
                     <span class="book-type">Thriller Story Collection</span>
@@ -902,12 +813,12 @@
                 </div>
                 <p>A collection of thrilling stories that explore the depths of human emotions and relationships.</p>
                 <div class="btn-group">
-                    <a href="https://www.rokomari.com/book/359829/preyoshi-black-edition" class="btn" target="_blank">Buy on Rokomari</a>
+                    <a href="https://www.rokomari.com/book/359829/preyoshi-black-edition" class="btn" target="_blank" rel="noopener noreferrer">Buy on Rokomari</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="img/img4.webp" alt="তুই আর একটু আনমনে থাক" loading="lazy">
+                <img src="img/তুই আরেকটু আনেমনে থাক.jpg" alt="তুই আর একটু আনমনে থাক novel cover" loading="lazy">
                 <h3>তুই আর একটু আনমনে থাক</h3>
                 <div class="book-info">
                     <span class="book-type">Novel</span>
@@ -915,12 +826,12 @@
                 </div>
                 <p>A captivating novel about relationships and self-discovery.</p>
                 <div class="btn-group">
-                    <a href="https://www.rokomari.com/book/453502/tui-ar-aktu-anmone-thak" class="btn" target="_blank">Buy on Rokomari</a>
+                    <a href="https://www.rokomari.com/book/453502/tui-ar-aktu-anmone-thak" class="btn" target="_blank" rel="noopener noreferrer">Buy on Rokomari</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="img/img5.webp" alt="জল জাদুকর" loading="lazy">
+                <img src="img/জল জাদুকর.jpg" alt="জল জাদুকর story collection cover" loading="lazy">
                 <h3>জল জাদুকর (Jal Jadukar)</h3>
                 <div class="book-info">
                     <span class="book-type">Story Collection</span>
@@ -928,12 +839,12 @@
                 </div>
                 <p>A collection of enchanting stories that blend reality with magic.</p>
                 <div class="btn-group">
-                    <a href="https://www.rokomari.com/book/257121/jal-jadukar" class="btn" target="_blank">Buy on Rokomari</a>
+                    <a href="https://www.rokomari.com/book/257121/jal-jadukar" class="btn" target="_blank" rel="noopener noreferrer">Buy on Rokomari</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="img/img6.webp" alt="ইথেন ও রোদ চশমা" loading="lazy">
+                <img src="img/ইথেন ও রোদ চশমা.jpeg" alt="ইথেন ও রোদ চশমা children's book cover" loading="lazy">
                 <h3>ইথেন ও রোদ চশমা</h3>
                 <div class="book-info">
                     <span class="book-type">Children's Stories</span>
@@ -941,12 +852,12 @@
                 </div>
                 <p>Children's stories filled with imagination and wonder.</p>
                 <div class="btn-group">
-                    <a href="https://www.rokomari.com/book/282237/ethen-o-rodh-coshma" class="btn" target="_blank">Buy on Rokomari</a>
+                    <a href="https://www.rokomari.com/book/282237/ethen-o-rodh-coshma" class="btn" target="_blank" rel="noopener noreferrer">Buy on Rokomari</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="img/img7.webp" alt="টেবিল নম্বর ১৭" loading="lazy">
+                <img src="img/টেবিল নম্বর ১৭.jpg" alt="টেবিল নম্বর ১৭ story collection cover" loading="lazy">
                 <h3>টেবিল নম্বর ১৭</h3>
                 <div class="book-info">
                     <span class="book-type">Story Collection</span>
@@ -954,24 +865,24 @@
                 </div>
                 <p>A collection of intriguing stories centered around table number 17.</p>
                 <div class="btn-group">
-                    <a href="https://www.rokomari.com/book/213607/table-nnumber-17" class="btn" target="_blank">Buy on Rokomari</a>
+                    <a href="https://www.rokomari.com/book/213607/table-nnumber-17" class="btn" target="_blank" rel="noopener noreferrer">Buy on Rokomari</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="img/img8.webp" alt="কঠিন তোমাকে ছাড়া একদিন" loading="lazy">
+                <img src="img/কঠিন তোমাকে ছাড়া একদিন.jpg" alt="কঠিন তোমাকে ছাড়া একদিন novel cover" loading="lazy">
                 <h3>কঠিন তোমাকে ছাড়া একদিন</h3>
                 <div class="book-info">
                     <span class="book-type">Novel</span>
                 </div>
                 <p>A heartfelt novel about love, separation, and emotional struggles.</p>
                 <div class="btn-group">
-                    <a href="https://www.rokomari.com/book/453480/kothin-tomake-sara-ekdin" class="btn" target="_blank">Buy on Rokomari</a>
+                    <a href="https://www.rokomari.com/book/453480/kothin-tomake-sara-ekdin" class="btn" target="_blank" rel="noopener noreferrer">Buy on Rokomari</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="img/img9.webp" alt="আঁধারের যুবরাজ" loading="lazy">
+                <img src="img/আঁধারের যুবরাজ.png" alt="আঁধারের যুবরাজ romantic novel cover" loading="lazy">
                 <h3>আঁধারের যুবরাজ</h3>
                 <div class="book-info">
                     <span class="book-type">Romantic Novel</span>
@@ -979,12 +890,12 @@
                 </div>
                 <p>A romantic novel exploring love in the darkness.</p>
                 <div class="btn-group">
-                    <a href="https://www.rokomari.com/book/373727/adharer-zuboraj" class="btn" target="_blank">Buy on Rokomari</a>
+                    <a href="https://www.rokomari.com/book/373727/adharer-zuboraj" class="btn" target="_blank" rel="noopener noreferrer">Buy on Rokomari</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="img/img10.webp" alt="সোয়েটার" loading="lazy">
+                <img src="img/সোয়েটার.jpg" alt="সোয়েটার first book cover" loading="lazy">
                 <h3>সোয়েটার (Sweater)</h3>
                 <div class="book-info">
                     <span class="book-type">Story Collection</span>
@@ -992,12 +903,12 @@
                 </div>
                 <p>Her first published book - a collection of compelling stories.</p>
                 <div class="btn-group">
-                    <a href="https://www.rokomari.com/book/205397/soyetar" class="btn" target="_blank">Buy on Rokomari</a>
+                    <a href="https://www.rokomari.com/book/205397/soyetar" class="btn" target="_blank" rel="noopener noreferrer">Buy on Rokomari</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="img/img11.webp" alt="জাগরণে যায় বিভাবরী" loading="lazy">
+                <img src="img/জাগরনে যায় বিভাবরী.jpg" alt="জাগরণে যায় বিভাবরী thriller novel cover" loading="lazy">
                 <h3>জাগরণে যায় বিভাবরী</h3>
                 <div class="book-info">
                     <span class="book-type">Thriller Novel</span>
@@ -1005,12 +916,12 @@
                 </div>
                 <p>A thriller novel that takes you on a journey through awakening.</p>
                 <div class="btn-group">
-                    <a href="https://www.rokomari.com/book/224632/jagorone-jay-bivabori" class="btn" target="_blank">Buy on Rokomari</a>
+                    <a href="https://www.rokomari.com/book/224632/jagorone-jay-bivabori" class="btn" target="_blank" rel="noopener noreferrer">Buy on Rokomari</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="img/img12.webp" alt="ব্রেকিং নিউজ" loading="lazy">
+                <img src="img/ব্রেকিং নিউজ.jpeg" alt="ব্রেকিং নিউজ story collection cover" loading="lazy">
                 <h3>ব্রেকিং নিউজ</h3>
                 <div class="book-info">
                     <span class="book-type">Story Collection</span>
@@ -1018,7 +929,7 @@
                 </div>
                 <p>A collection of stories inspired by breaking news events.</p>
                 <div class="btn-group">
-                    <a href="https://www.rokomari.com/book/221924/breaking-news" class="btn" target="_blank">Buy on Rokomari</a>
+                    <a href="https://www.rokomari.com/book/221924/breaking-news" class="btn" target="_blank" rel="noopener noreferrer">Buy on Rokomari</a>
                 </div>
             </div>
         </div>
@@ -1030,7 +941,7 @@
 
         <div class="projects-grid">
             <div class="project-card">
-                <img src="img/img13.webp" alt="গল্পকথার কল্পলোকে" loading="lazy">
+                <img src="img/গল্পকথার কল্পলোক.jpg" alt="গল্পকথার কল্পলোকে edited collection cover" loading="lazy">
                 <h3>গল্পকথার কল্পলোকে</h3>
                 <div class="book-info">
                     <span class="book-type">Edited Collection</span>
@@ -1038,12 +949,14 @@
                 </div>
                 <p>A collection of children's thriller stories edited by Sushmita Zafar.</p>
                 <div class="btn-group">
-                    <a href="https://www.rokomari.com/book/282240/golpokothar-kolpoloke" class="btn" target="_blank">Buy on Rokomari</a>
+                    <a href="https://www.rokomari.com/book/282240/golpokothar-kolpoloke" class="btn" target="_blank" rel="noopener noreferrer">Buy on Rokomari</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="img/img14.webp" alt="গল্পকথার কল্পলোকে - ২" loading="lazy">
+                <!-- Note: You only provided one file for গল্পকথার কল্পলোক.jpg -->
+                <!-- If you have a second volume image, update this src -->
+                <img src="img/গল্পকথার কল্পলোক.jpg" alt="গল্পকথার কল্পলোকে - ২ edited collection cover" loading="lazy">
                 <h3>গল্পকথার কল্পলোকে - ২</h3>
                 <div class="book-info">
                     <span class="book-type">Edited Collection</span>
@@ -1051,12 +964,12 @@
                 </div>
                 <p>Second volume of children's mystery stories edited by Sushmita Zafar.</p>
                 <div class="btn-group">
-                    <a href="https://www.rokomari.com/book/448759/golpokothar-kolpoloke-2" class="btn" target="_blank">Buy on Rokomari</a>
+                    <a href="https://www.rokomari.com/book/448759/golpokothar-kolpoloke-2" class="btn" target="_blank" rel="noopener noreferrer">Buy on Rokomari</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="img/img15.webp" alt="নকশীকাঁথা" loading="lazy">
+                <img src="img/নকশীকাঁথা.jpg" alt="নকশীকাঁথা edited collection cover" loading="lazy">
                 <h3>নকশীকাঁথা</h3>
                 <div class="book-info">
                     <span class="book-type">Edited Collection</span>
@@ -1064,7 +977,7 @@
                 </div>
                 <p>A beautifully edited collection of stories, like an embroidered quilt of narratives.</p>
                 <div class="btn-group">
-                    <a href="https://www.rokomari.com/book/218810/nokshikantha" class="btn" target="_blank">Buy on Rokomari</a>
+                    <a href="https://www.rokomari.com/book/218810/nokshikantha" class="btn" target="_blank" rel="noopener noreferrer">Buy on Rokomari</a>
                 </div>
             </div>
         </div>
@@ -1086,7 +999,7 @@
                 </div>
                 <p>Two compelling stories exploring the lives and challenges of housewives in contemporary society.</p>
                 <div class="btn-group">
-                    <a href="https://link.boitoi.com.bd/8gjD" class="btn" target="_blank">Read on Boitoi</a>
+                    <a href="https://link.boitoi.com.bd/8gjD" class="btn" target="_blank" rel="noopener noreferrer">Read on Boitoi</a>
                 </div>
             </div>
 
@@ -1101,7 +1014,7 @@
                 </div>
                 <p>A captivating novel about relationships, self-discovery, and the complexities of human emotions.</p>
                 <div class="btn-group">
-                    <a href="https://link.boitoi.com.bd/ApgE" class="btn" target="_blank">Read on Boitoi</a>
+                    <a href="https://link.boitoi.com.bd/ApgE" class="btn" target="_blank" rel="noopener noreferrer">Read on Boitoi</a>
                 </div>
             </div>
 
@@ -1116,7 +1029,7 @@
                 </div>
                 <p>A thrilling novel that takes readers on a journey through awakening and self-discovery.</p>
                 <div class="btn-group">
-                    <a href="https://link.boitoi.com.bd/UrWV" class="btn" target="_blank">Read on Boitoi</a>
+                    <a href="https://link.boitoi.com.bd/UrWV" class="btn" target="_blank" rel="noopener noreferrer">Read on Boitoi</a>
                 </div>
             </div>
         </div>
@@ -1131,7 +1044,7 @@
                 <div class="publishing-card">
                     <h3>Where to Buy Books</h3>
                     <ul>
-                        <li><a href="https://www.rokomari.com" target="_blank">Rokomari.com</a></li>
+                        <li><a href="https://www.rokomari.com" target="_blank" rel="noopener noreferrer">Rokomari.com</a></li>
                         <li>Dhee Book Shop</li>
                         <li>Pragya Book Shop</li>
                         <li>Book Angel (বইপরী)</li>
@@ -1191,10 +1104,11 @@
         <div class="input-box">
             <p>Subscribe to receive updates about new book releases and events</p>
             <div class="input">
-                <input type="email" placeholder="Enter your email address">
+                <input type="email" id="email-input" placeholder="Enter your email address" required>
                 <i class="fa-solid fa-envelope"></i>
             </div>
-            <div class="btn">Subscribe</div>
+            <button class="btn" id="subscribe-btn">Subscribe</button>
+            <div class="success-message" id="success-message">Thank you! You've been subscribed successfully.</div>
         </div>
     </section>
 
@@ -1248,6 +1162,82 @@
                 header.style.background = 'rgba(0, 0, 0, 0.9)';
             }
         });
+
+        // Newsletter Subscription
+        document.getElementById('subscribe-btn').addEventListener('click', function() {
+            const email = document.getElementById('email-input').value;
+            const btn = this;
+            const successMessage = document.getElementById('success-message');
+            
+            if (!validateEmail(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Show loading state
+            btn.classList.add('btn-loading');
+            btn.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                // In a real implementation, you would send this to your backend
+                console.log('Subscribed email:', email);
+                
+                // Hide loading state
+                btn.classList.remove('btn-loading');
+                btn.disabled = false;
+                
+                // Show success message
+                successMessage.classList.add('show');
+                
+                // Clear input
+                document.getElementById('email-input').value = '';
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000);
+            }, 1000);
+        });
+
+        // Email validation function
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        // Lazy loading images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // Add loading attribute to images
+        document.querySelectorAll('img').forEach(img => {
+            if (!img.hasAttribute('loading')) {
+                img.setAttribute('loading', 'lazy');
+            }
+        });
+    </script>
+
+    <!-- Google Analytics placeholder -->
+    <script>
+        // Replace with your actual Google Analytics tracking code
+        // window.dataLayer = window.dataLayer || [];
+        // function gtag(){dataLayer.push(arguments);}
+        // gtag('js', new Date());
+        // gtag('config', 'YOUR-GA-ID');
     </script>
 </body>
 </html>
